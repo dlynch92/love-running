@@ -17,6 +17,8 @@ body {
     font-family: "Lato", sans-serif;
 }
 
+
+/* Header content */
 header {
     background-color: #ffffff;
     padding: 0 1rem;
@@ -31,12 +33,40 @@ header a {
     color: inherit;
 }
 
+#menu {
+    font-size: 110%;
+    letter-spacing: 4px;
+    list-style-type: none;
+}
+
+#menu > li {
+    margin-bottom: 1em;
+}
+
+/* Underlines the currently active web page in the nav bar */
+.active{
+    border-bottom: 1px solid #3a3a3a
+}
+
+/* Navbar styles w/ dropdown toggle */
+nav {
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: none;
+}
+
+
+/* Main content */
 main {
     background-color: rgb(209, 220, 50);
    /* Makes main take up any surplus space */
     flex: 1 0 auto;
 }
-
+/* Footer content */
 footer {
     background-color: burlywood;
 }
@@ -48,17 +78,3 @@ h1 {
     color: #252525;
 }
 
-/* Underlines the currently active web page in the nav bar */
-.active{
-    border-bottom: 1px solid #3a3a3a
-}
-
-#menu {
-    font-size: 110%;
-    letter-spacing: 4px;
-    list-style-type: none;
-}
-
-#menu > li {
-    margin-bottom: 1em;
-}
