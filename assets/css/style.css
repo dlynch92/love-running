@@ -18,7 +18,9 @@ body {
 }
 
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: "Oswald", sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -50,12 +52,12 @@ header a {
     list-style-type: none;
 }
 
-#menu > li {
+#menu>li {
     margin-bottom: 1em;
 }
 
 /* Underlines the currently active web page in the nav bar */
-.active{
+.active {
     border-bottom: 1px solid #3a3a3a
 }
 
@@ -72,7 +74,7 @@ nav {
 }
 
 /* Nav toggle */
-#nav-toggle:checked~nav{
+#nav-toggle:checked~nav {
     display: block;
 }
 
@@ -80,53 +82,26 @@ nav {
     display: none;
 }
 
-.nav-toggle-label{
+.nav-toggle-label {
     font-size: 2rem;
 }
 
 /* Main content */
 main {
-   /* Makes main take up any surplus space */
+    /* Makes main take up any surplus space */
     flex: 1 0 auto;
     margin-top: 47px;
 }
 
-/* Styles the reasons section */
-hr{
-    border-top: 1px solid #3a3a3a;
-    margin: 5px 0; 
- }
- 
- #reasons > h2 {
-    font-size: 280%;
-    margin-bottom: 20px;
- }
-
- #reasons p {
-    padding: 0 20px;
-    margin-bottom: 20px;
- }
-
- #reasons{
-    margin: 20px auto;
-    width: 90%;
- }
-
- #benefits-physical > div, #benefits-mental > div {
-    line-height: 20px;
- }
- 
- /* ending of reasons section styles */
-
-/* Hero image */
-#hero{
+/* Hero */
+#hero {
     height: 600px;
     width: 100%;
     background: url("../images/hero-image.webp") no-repeat center center/cover;
     position: relative;
 }
 
-#cover-text{
+#cover-text {
     background-color: rgb(241, 109, 107, .7);
     position: absolute;
     bottom: 30px;
@@ -136,9 +111,56 @@ hr{
     padding-left: 10px;
 }
 
-#cover-text > h2, #cover-text > h3{
+#cover-text>h2,
+#cover-text>h3 {
     color: white;
 }
+/* end of hero  */
+/* Styles the reasons section */
+hr {
+    border-top: 1px solid #3a3a3a;
+    margin: 5px 0;
+}
+
+#reasons>h2 {
+    font-size: 280%;
+    margin-bottom: 20px;
+}
+
+#reasons p {
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+#reasons {
+    margin: 20px auto;
+    width: 90%;
+}
+
+#benefits-physical>div,
+#benefits-mental>div {
+    line-height: 20px;
+}
+
+#circle-cover-bg {
+    background: url(../images/reasons-image.webp) no-repeat top center/cover;
+    width: 90vw;
+    height: 90vw;
+    margin-bottom: 20px;
+    border: 1px solid red;
+    /* Makes it a circle */
+    border-radius: 50%;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+#benefits-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+/* ending of reasons section styles */
 
 /* Footer content */
 #social-networks {
@@ -149,7 +171,7 @@ hr{
     list-style-type: none;
 }
 
-#social-networks i{
+#social-networks i {
     font-size: 160%;
     padding: 5%;
     color: #3a3a3a;
@@ -157,8 +179,9 @@ hr{
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
+
     /* header */
-    nav{
+    nav {
         display: block;
         position: relative;
         box-shadow: none;
@@ -166,40 +189,41 @@ hr{
         padding-right: 1rem;
     }
 
-    #menu{
+    #menu {
         display: flex;
     }
 
-    #menu>li{
+    #menu>li {
         padding-left: 1rem;
     }
 
-    .nav-toggle-label{
+    .nav-toggle-label {
         display: none;
     }
 
-    #logo{
+    #logo {
         font-size: 280%;
         line-height: 75px;
         margin: 0 0.5rem;
     }
 
     /* Main content */
-    main{
+    main {
         margin-top: 79px;
     }
 
     /* Hero image */
     #cover-text {
-        width: 300px; 
+        width: 300px;
         right: 50px;
     }
 }
 
 /* Large devices - laptops and desktops 992px and up */
 @media screen and (min-width: 992px) {
+
     /* header*/
-    #menu a:hover{
+    #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
     }
 }
